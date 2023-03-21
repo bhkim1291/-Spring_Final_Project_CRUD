@@ -7,7 +7,7 @@
 <head>
 	<meta name="description" content="userC.jsp">
 	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-	<title>Tour Visit Sign Up</title>
+	<title>GKYK mall Sign Up</title>
 	<link href="${context}/css/plugins/metisMenu/metisMenu.min.css" rel="stylesheet">
 	<link href="${context}/css/plugins/social-buttons.css" rel="stylesheet">
 	<link href="${context}/font-awesome-4.4.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
@@ -176,12 +176,12 @@
 
 </head>
 <body>
-	<jsp:include page="../common/header.jsp"></jsp:include>
+	<jsp:include page="../common/header_userc.jsp"></jsp:include>
 
 	<div id="jumbotron" class="container">
 		<div class="jumbotron jumbotron-info" style="background-color: lightgray;">
 			<h1><font color="black"><strong>회원가입</strong>&nbsp;<span class="glyphicon glyphicon glyphicon-pencil"></span></font></h1>
-			<p>Tour Visit 회원가입을 진심으로 환영합니다.</p>
+			<p>GKYK mall 회원가입을 진심으로 환영합니다.</p>
 		</div>
 	</div>
 	<div class="container">
