@@ -44,8 +44,8 @@
 	<div id="jumbotron" class="container">
 		<div class="jumbotron jumbotron-info" style="background-color: rgb(153, 255, 255) !important;
 ">
-			<h1 style="text-align: center !important; fon "><font color="#212529";>자유게시판</font></h1>
-			<p><font color="#212529" style="text-align: center !important;">Tour Visit</font></p>
+			<h1 style="text-align: center !important; font-size: 40px; font-weight: bold !important;">자유게시판</h1><hr>
+			<p style="text-align: center !important; font-weight: bold; font-size: 30px;">Tour Visit</p>
 		</div>
 		
 		<div class="row">

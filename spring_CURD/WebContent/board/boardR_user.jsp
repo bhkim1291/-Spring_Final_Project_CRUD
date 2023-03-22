@@ -52,11 +52,13 @@
 	}
 
 	//글 수정
-	function fn_update(){
-		var boardNo = '${dsBoard.BOARD_NO}';
 
-		location.href = "${context}/work/board/updateBoard.do?boardNo=" + boardNo;
-	}
+	 
+	function fn_update2(){
+	      var boardNo = '${dsBoard.BOARD_NO}';
+
+	      location.href = "${context}/work/board/updateBoard2.do?boardNo=" + boardNo;
+	   }
 	
 	function fn_update2(){
 		var boardNo = '${dsBoard.BOARD_NO}';
@@ -85,7 +87,7 @@ li{
 
 	
 	<div class="container" style="margin-top: 2%; margin-bottom: 10%;">
-	<h1>Board<button class="btn btn-success" type="button" style="float: right;" onclick="fn_moveToBoard2()">목록</button></h1>
+	<h1>상세 내용<button class="btn btn-success" type="button" style="float: right;" onclick="fn_moveToBoard2()">목록</button></h1>
 	<ul class="list-group">
 	  <li class="list-group-item">
 	  	<font size="6px" color="lightblack">${dsBoard.USER_ID}</font>
@@ -101,19 +103,21 @@ li{
 	  <li class="list-group-item" style="min-height: 250px;">${dsBoard.BOARD_CONTENTS}</li>
 	</ul>
 
-	<c:if test="${sessionScope.userCode == dsBoard.USER_CODE}">
-		<div class="row">
-		<div class="col-md-1">
-			<button class="btn btn-warning" type="button"  onclick="fn_update2()">수정</button>
+	<c:if test="${sessionScope.userCode == dsBoard.USER_CODE or sessionScope.grade == 'A'}">
+		<div class="">
+			<button class="btn btn-warning" type="button"  onclick="fn_update2()" style="float: left; margin-left: -2px; color: #000000 !important;">수정</button>
 		</div>
-		<div class="col-md-offset-9 col-md-1">
-			<button class="btn btn-primary" type="button" name="btnSubmit" id="btnSubmit" onclick="fn_delete2()">삭제</button>
-		</div>
-	</div>
-
 	</c:if>
+			<button class="btn btn-primary" type="button" name="btnSubmit" id="btnSubmit" onclick="fn_delete2()" style="margin-right: -2px; float: right; color: #ffffff !important;">삭제</button>
+			<p>${sessionScope.grade=='A'}</p>${sessionScope.userCode}<p>
+		</div>
+	</div>
+
 
 	</div>
+
+	
+	
 	
 <jsp:include page="../common/footer.jsp"></jsp:include>
 </body>

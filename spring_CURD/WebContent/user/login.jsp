@@ -30,8 +30,7 @@
 	<jsp:include page="../common/header.jsp"></jsp:include>
 	<div id="jumbotron" class="container">
 		<div class="jumbotron jumbotron-info" >
-			<h1><strong>자유게시판<br><hr>Login Page</strong>&nbsp;<span class="glyphicon glyphicon glyphicon-pencil"></span></font></h1>
-			<p>Tour Visit에 오신 것을 진심으로 환영합니다.</p>
+			<h1><strong>자유게시판<br><hr>Login Page</strong>&nbsp;<span class="glyphicon glyphicon glyphicon-pencil" style="margin-bottom: 40px !important;"></span></font></h1>
 		</div>
 	</div>
     <div class="container">
@@ -39,7 +38,7 @@
             <div class="login_form">
                 <div class="login-panel panel panel-default"  style="margin-bottom: 57%; padding: 0 10%;">
                     <div class="panel-heading">
-                        <h3 class="panel-title" style="text-align: center; margin-bottom: 80px; margin-top: -200px; ">Please Sign In<hr></h3>
+                        <h3 class="panel-title" >Please Sign In<hr></h3>
                     </div>
                     <div class="panel-body">
                         <form action="${context}/work/user/login.do" method="post" role="form" id="loginFrm">
@@ -55,7 +54,9 @@
                                 	<span style="float: right;"><a href="${context}/work/user/createUser.do">회원가입</a></span><br>
                                 </div>
                                 <!-- Change this to a button or input when using this as a form -->
-                                <button type="button" class="btn btn-lg btn-success btn-block" onclick="ajaxLoginCheck();">Login</button>
+                                <button type="button" class="btn btn-lg btn-success btn-block" 
+                                style="margin-bottom: 150px;"
+                                onclick="ajaxLoginCheck();">Login</button>
                             </fieldset>
                         </form>
                     </div>

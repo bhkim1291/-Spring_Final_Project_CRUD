@@ -63,7 +63,7 @@
 <jsp:include page="../common/header.jsp"></jsp:include>
 	<div class="container" style="margin-top: 2%; margin-bottom: 10%;">
 	<div class="page-header">
-		<h1>글 수정하기</h1>
+		<h1>게시글 수정하기</h1>
 	</div>
 	<c:if test="${sessionScope.grade == 'A'}">
 	
@@ -89,16 +89,11 @@
 				<input class="form-control" type="hidden" name="boardNo" id="boardNo"/>
 			</div>
 		<div class="form-group">
-			<div class="col-md-offset-1 col-md-2">
-				<button type="button" class="btn btn-default" onclick="fn_back()">취소</button>
+				<button type="button" class="btn btn-default" onclick="fn_back()" style="float: left; margin-left: 10px; color: #000000 !important;">취소</button>
 			</div>
-			<div class="col-md-offset-7 col-md-1">
-				<button class="btn btn-primary" type="button" name="btnSubmit" id="btnSubmit" onclick="fn_save()">등록하기</button>
+				<button class="btn btn-primary" type="button" name="btnSubmit" id="btnSubmit" onclick="fn_save()" style="margin-right: 100px; float: right; color: #ffffff !important;">등록하기</button>
 			</div>
 		</div>
-		</div>
-	</form>
-	</div>
 <jsp:include page="../common/footer.jsp"></jsp:include>
 </body>
 </html>

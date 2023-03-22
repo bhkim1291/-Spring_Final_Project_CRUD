@@ -179,9 +179,9 @@
 	<jsp:include page="../common/header_userc.jsp"></jsp:include>
 
 	<div id="jumbotron" class="container">
-		<div class="jumbotron jumbotron-info" style="background-color: lightgray;">
-			<h1><font color="black"><strong>회원가입</strong>&nbsp;<span class="glyphicon glyphicon glyphicon-pencil"></span></font></h1>
-			<p>GKYK mall 회원가입을 진심으로 환영합니다.</p>
+		<div class="jumbotron jumbotron-info" style="background-color: rgb(153, 255, 255) !important;">
+			<h1 style="text-align: center; margin-bottom: 30px;" ><font color="black" ><strong>회원가입</strong>&nbsp;<span class="glyphicon glyphicon glyphicon-pencil"></span></font></h1>
+			<hr><p style="text-align: center; font-size: 20px; font-weight: bold" ><font color="gray" >Tour Visit 회원가입을 진심으로 환영합니다.</p>
 		</div>
 	</div>
 	<div class="container">
