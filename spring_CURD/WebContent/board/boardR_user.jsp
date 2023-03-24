@@ -105,11 +105,14 @@ li{
 
 	<c:if test="${sessionScope.userCode == dsBoard.USER_CODE or sessionScope.grade == 'A'}">
 		<div class="">
+	<c:if test="${sessionScope.userCode == dsBoard.USER_CODE}">
 			<button class="btn btn-warning" type="button"  onclick="fn_update2()" style="float: left; margin-left: -2px; color: #000000 !important;">수정</button>
+		</c:if>
 		</div>
-	</c:if>
+			<div class="">
 			<button class="btn btn-primary" type="button" name="btnSubmit" id="btnSubmit" onclick="fn_delete2()" style="margin-right: -2px; float: right; color: #ffffff !important;">삭제</button>
 		</div>
+	</c:if>
 	</div>
 
 

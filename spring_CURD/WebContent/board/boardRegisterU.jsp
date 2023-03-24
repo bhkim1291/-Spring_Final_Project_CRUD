@@ -65,14 +65,19 @@
 	<div class="page-header">
 		<h1>게시글 수정하기</h1>
 	</div>
-	<c:if test="${sessionScope.grade == 'A'}">
+	
+	
+	<!--<c:if test="${sessionScope.grade == 'A'}">
 	
 	<form id="updateBoard" method="post" action="${context}/work/board/updateBoard.do" role="form">
-	</c:if>
-	<c:if test="${sessionScope.grade == 'M'}">
+	</c:if>-->
 	
 	<form id="updateBoard" method="post" action="${context}/work/board/updateBoard2.do" role="form">
-	</c:if>
+	
+	<!--<c:if test="${sessionScope.grade == 'M'}">
+	
+	<form id="updateBoard" method="post" action="${context}/work/board/updateBoard2.do" role="form">
+	</c:if>-->
 		<div class="form-horizontal">
 			<div class="form-group">
 				<label for="boardTitle" class="control-label col-md-1"><b>제목</b></label>
