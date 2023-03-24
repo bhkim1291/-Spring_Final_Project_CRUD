@@ -14,8 +14,8 @@
                value="oracle.jdbc.driver.OracleDriver" />
             <property name="url"
                value="JDBC:oracle:thin:@localhost:1521:orcl" />
-            <property name="username" value="eshop" />
-            <property name="password" value="eshop" />
+            <property name="username" value="jsp_springboot" />
+            <property name="password" value="jsp_springboot" />
          </dataSource>
       </environment>
    </environments>

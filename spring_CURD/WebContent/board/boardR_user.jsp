@@ -109,7 +109,6 @@ li{
 		</div>
 	</c:if>
 			<button class="btn btn-primary" type="button" name="btnSubmit" id="btnSubmit" onclick="fn_delete2()" style="margin-right: -2px; float: right; color: #ffffff !important;">삭제</button>
-			<p>${sessionScope.grade=='A'}</p>${sessionScope.userCode}<p>
 		</div>
 	</div>
 

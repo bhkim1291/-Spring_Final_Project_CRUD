@@ -190,17 +190,6 @@ a{
 			  				<button type="button" class="btn btn-primary header-icon-wrap">
 			  		-->
 							<!-- 이미지 버튼 종료 -->
-								<c:if test="${sessionScope.id != null && sessionScope.grade == 'A'}">
-									<button class="btn btn-default" type="button" onclick="location.href='${context}/work/product/retrieveProductListForManage.do'">
-										<strong>재고관리</strong>
-									</button>
-									<button class="btn btn-default" type="button" onclick="location.href='${context}/work/sell/retrieveStatisticsForProduct.do'">
-										<strong>매출통계</strong>
-									</button>
-									<button class="btn btn-default" type="button" onclick="location.href='${context}/work/product/retrieveStatisticsForStock.do?productCategoryCd=P'">
-										<strong>재고현황</strong>
-									</button>
-								</c:if>
 							</div>
 							<!-- 드롭다운 버튼 부분 종료 -->
 						</div>
@@ -287,11 +276,11 @@ a{
 		</ul>
 		<ul class="nav justify-content-end">
 		  	<li class="nav-item">
-		  	<c:if test="${resultVO == null}">
-		    	<a class="nav-link active" aria-current="page" href="login.do">로그인</a>
+		  	<c:if test="${sessionScope.id == null}">
+		    	<a class="nav-link active" aria-current="page" href="${context}/user/login.jsp">로그인</a>
 		   	</c:if>
-		    <c:if test="${resultVO != null}">
-		    	<a class="nav-link active" aria-current="page" href="logout.do">로그아웃</a>
+		    <c:if test="${sessionScope.id != null}">
+		    	<a class="nav-link active" aria-current="page" href="${context}/work/user/logout.do">로그아웃</a>
 		   	</c:if>
 		  	</li>
 		  	<li class="nav-item">
